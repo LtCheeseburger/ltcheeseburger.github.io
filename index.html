@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>xLtCheeseburger — Play. Build. Evolve.</title>
+  <meta name="description" content="xLtCheeseburger • Gaming, coding, and tech. Mods, tools, streams, and projects." />
+  <meta name="theme-color" content="#0E0E0E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container wrap">
+      <a class="brand" href="#top" aria-label="Home">
+        <img src="assets/logo.png" alt="xLtCheeseburger logo" class="brand-logo-img" />
+        <span class="brand-wordmark">XLTCHEESEBURGER</span>
+      </a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#videos">Videos</a>
+        <a href="#stream">Stream</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <span class="eyebrow">PLAY • BUILD • EVOLVE</span>
+      <h1>Welcome to the club.</h1>
+      <p class="lede">Developer and tinkerer exploring code, hardware, and design — always chasing the next challenge.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://www.youtube.com/@xltcheeseburger" target="_blank" rel="noopener">YouTube</a>
+        <a class="btn" href="https://twitch.tv/xLtCheeseburger" target="_blank" rel="noopener">Twitch</a>
+        <a class="btn" href="https://github.com/LtCheeseburger" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="#projects">See projects</a>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <!--
+        <article class="card">
+          <h3>CFB Revamped — Team Expansion</h3>
+          <p>Experimental mod to push NCAA 14 beyond 126 teams. Focus on rankings, recruiting, scheduling, and console parity.</p>
+          <a class="chip" href="#" aria-disabled="true">Docs coming</a>
+        </article>
+        <article class="card">
+          <h3>EA AST Toolsuite</h3>
+          <p>Reverse‑engineering helpers and file format utilities for classic EA titles. Built for speed and clarity.</p>
+          <a class="chip" href="#" aria-disabled="true">Repo soon</a>
+        </article>
+        <article class="card">
+          <h3>Meshtastic Field Kit</h3>
+          <p>Off‑grid comms notes: ATAK plugin setup, curated ZIM packs, and node recipes for field use.</p>
+          <a class="chip" href="#" aria-disabled="true">Readme</a>
+        </article>
+       
+      </div>
+    </section>
+
+    <section id="videos" class="section container feature">
+      <div>
+        <h2>Latest Uploads</h2>
+        <div class="embed">
+          <iframe 
+            src="https://www.youtube.com/embed?listType=user_uploads&list=xltcheeseburger" 
+            title="YouTube player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>What to expect</h3>
+        <p>Short, focused videos: project breakdowns, mod tests, and clean UI builds. Occasional long‑form deep dives when a tool deserves it.</p>
+        <ul>
+          <li>Hands‑on demos</li>
+          <li>Code + assets linked</li>
+          <li>Performance + workflow tips</li>
+        </ul>
+      </div>
+    </section>
+ -->
+    <section id="stream" class="section container">
+      <h2>Live Stream</h2>
+      <div class="embed">
+        <!-- Replace parent=YOURDOMAIN with your real domain (e.g., xltcheeseburger.github.io) -->
+        <iframe
+          src="https://player.twitch.tv/?channel=xltcheeseburger&parent=xltcheeseburger.github.io"
+          title="Twitch Stream" frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section id="about" class="section container feature">
+      <div class="panel">
+        <h3>About</h3>
+        <p>I’m xLtCheeseburger — the creator behind the brand. My mission is simple: play, build, evolve. I experiment with mods, tech, and tools that push limits while keeping the experience clean and fun. 
+          <br/>
+          <br/>
+          Currently I'm not working on anything.</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>Best way to reach me: open an issue on this site’s repo or DM via Discord.</p>
+        <ul class="socials">
+          <li><a href="https://github.com/xLtCheeseburger" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.youtube.com/@xltcheeseburger" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://twitch.tv/xLtCheeseburger" target="_blank" rel="noopener">Twitch</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container wrap">
+      <small>© <span id="year"></span> • xLtCheeseburger •</small>
+      <a href="#top" class="top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('#year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

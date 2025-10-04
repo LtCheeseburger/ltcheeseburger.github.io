@@ -1,0 +1,57 @@
+:root{
+  --bg:#0E0E0E;
+  --surface:#151515;
+  --text:#ECECEC;
+  --muted:#A6A6A6;
+  --accent:#E19122;
+  --accent-2:#FFB649;
+  --ring:rgba(225,145,34,.4);
+  --radius:18px;
+  --shadow:0 10px 30px rgba(0,0,0,.4);
+  --max:1100px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(circle at 10% 20%, rgba(225,145,34,.15) 0 6px, transparent 7px),radial-gradient(circle at 85% 25%, rgba(255,255,255,.18) 0 4px, transparent 5px),radial-gradient(circle at 75% 80%, rgba(255,255,255,.14) 0 5px, transparent 6px),radial-gradient(circle at 30% 75%, rgba(225,145,34,.12) 0 7px, transparent 8px);filter:blur(.2px);}
+.container{max-width:var(--max);margin:0 auto;padding:0 20px}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(21,21,21,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:70px}
+.brand{display:flex;gap:12px;align-items:center;color:var(--text);text-decoration:none}
+.brand-logo{width:42px;height:42px;border-radius:50%;background:radial-gradient(circle at 30% 30%, var(--accent-2), var(--accent));box-shadow:0 0 0 3px rgba(225,145,34,.18), var(--shadow)}
+.brand-logo-img {
+width: 42px;
+height: 42px;
+object-fit: contain;
+border-radius: 6px;
+}
+.brand-wordmark{font-family:"Bebas Neue", system-ui, sans-serif;letter-spacing:.6px;font-size:30px}
+nav a{color:var(--text);opacity:.85;text-decoration:none;margin-left:18px}
+nav a:hover{opacity:1}
+.cta{padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.12)}
+.hero{padding:86px 0 34px}
+.hero .eyebrow{display:inline-block;font-family:"Bebas Neue";letter-spacing:1px;color:var(--accent-2);background:rgba(225,145,34,.08);border:1px solid rgba(225,145,34,.25);padding:6px 10px;border-radius:999px;margin-bottom:12px}
+.hero h1{font-family:"Bebas Neue";font-size:clamp(42px,7vw,86px);line-height:1.04;margin:0 0 10px}
+.hero .lede{font-size:clamp(16px,2.3vw,20px);color:var(--muted);max-width:800px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.btn{display:inline-block;padding:12px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.12);text-decoration:none;color:var(--text);box-shadow:var(--shadow)}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#111;font-weight:800;border:0}
+.section{padding:54px 0}
+.section h2{font-family:"Bebas Neue";font-size:34px;letter-spacing:.5px;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:linear-gradient(160deg,var(--surface), #0f0f0f);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);transition:transform .15s ease, border-color .15s ease}
+.card:hover{transform:translateY(-2px);border-color:rgba(225,145,34,.35)}
+.card h3{margin-top:0;font-size:20px}
+.chip{display:inline-block;margin-top:10px;padding:6px 10px;border-radius:999px;background:rgba(225,145,34,.08);border:1px dashed rgba(225,145,34,.35);color:var(--text);text-decoration:none}
+.embed{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:var(--radius);border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow)}
+.embed iframe{position:absolute;inset:0;width:100%;height:100%}
+.feature{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
+.feature .panel{background:linear-gradient(180deg,var(--surface), #0f0f0f);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.feature .panel h3{margin-top:0}
+.socials{display:flex;gap:14px;flex-wrap:wrap;list-style:none;padding:0;margin:10px 0 0}
+.socials a{color:var(--text)}
+.site-footer{padding:36px 0;border-top:1px solid rgba(255,255,255,.08);margin-top:44px}
+.site-footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.top{color:var(--text);opacity:.85;text-decoration:none}
+.top:hover{opacity:1}
+@media (max-width:800px){.feature{grid-template-columns:1fr}nav{display:none}}
